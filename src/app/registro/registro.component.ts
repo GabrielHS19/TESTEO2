@@ -11,7 +11,7 @@ export class RegistroComponent implements OnInit {
     private router: Router
   ) { }
   ir(){
-    this.router.navigate(['/home']);
+    this.router.navigate(['/mapa']);
     return true;
   }
   ngOnInit(): void {

@@ -21,7 +21,10 @@ ir(){
   return true;
 }
 
-
+irRegistro(){
+  this.router.navigate(['/registro']);
+  return true;
+}
   ngOnInit(): void {
   }
 
