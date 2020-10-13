@@ -32,7 +32,7 @@ class RegistroComponent {
         this.router = router;
     }
     ir() {
-        this.router.navigate(['/home']);
+        this.router.navigate(['/mapa']);
         return true;
     }
     ngOnInit() {
@@ -607,11 +607,15 @@ class LoginComponent {
         this.router.navigate(['/mapa']);
         return true;
     }
+    irRegistro() {
+        this.router.navigate(['/registro']);
+        return true;
+    }
     ngOnInit() {
     }
 }
 LoginComponent.ɵfac = function LoginComponent_Factory(t) { return new (t || LoginComponent)(_angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdirectiveInject"](_angular_router__WEBPACK_IMPORTED_MODULE_1__["Router"])); };
-LoginComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: LoginComponent, selectors: [["app-login"]], decls: 28, vars: 0, consts: [["charset", "utf-8"], ["align", "center"], ["size", "10"], ["size", "5"], [1, "login-box"], ["for", "username"], ["type", "text", "placeholder", "Ingresa tu usuario", "name", "username"], ["for", "password"], ["type", "password", "placeholder", "Ingresa tu contrase\u00F1a", "name", "password"], ["type", "submit", "value", "Ingresar", 3, "click"], ["href", "registro"]], template: function LoginComponent_Template(rf, ctx) { if (rf & 1) {
+LoginComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineComponent"]({ type: LoginComponent, selectors: [["app-login"]], decls: 26, vars: 0, consts: [["charset", "utf-8"], ["align", "center"], ["size", "10"], ["size", "5"], [1, "login-box"], ["for", "username"], ["type", "text", "placeholder", "Ingresa tu usuario", "name", "username"], ["for", "password"], ["type", "password", "placeholder", "Ingresa tu contrase\u00F1a", "name", "password"], ["type", "submit", "value", "Ingresar", 3, "click"], ["type", "submit", "value", "Registrate", 3, "click"]], template: function LoginComponent_Template(rf, ctx) { if (rf & 1) {
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](0, "html");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](1, "head");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](2, "meta", 0);
@@ -647,10 +651,9 @@ LoginComponent.ɵcmp = _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵdefineCom
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](24, "input", 9);
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function LoginComponent_Template_input_click_24_listener() { return ctx.ir(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "a", 10);
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵtext"](26, "Registrate");
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementStart"](25, "input", 10);
+        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵlistener"]("click", function LoginComponent_Template_input_click_25_listener() { return ctx.irRegistro(); });
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
-        _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelement"](27, "br");
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
         _angular_core__WEBPACK_IMPORTED_MODULE_0__["ɵɵelementEnd"]();
